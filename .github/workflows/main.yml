@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp-quaiantiquemb.alwaysdata.net
+        server: sftp://ssh-quaiantiquemb.alwaysdata.net
         username: quaiantiquemb
         password: ${{ secrets.ftp_password }}
         exclude: |
